@@ -1,0 +1,19 @@
+﻿@page "/login"
+
+<h3>Login</h3>
+
+<EditForm Model="this.loginModel" OnValidSubmit="this.LoginAsync">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <InputText class="form-control" id="email" @bind-Value="this.loginModel.Login" />
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <InputText class="form-control" id="password" @bind-Value="this.loginModel.Password" />
+    </div>
+    <button class="btn btn-primary" type="submit">Login</button>
+</EditForm>

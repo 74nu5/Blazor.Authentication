@@ -14,7 +14,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 
-public class AuthenticationBusiness : IAuthenticationBusiness
+/// <summary>
+/// Authentication business.
+/// </summary>
+public sealed class AuthenticationBusiness : IAuthenticationBusiness
 {
     public const string AccountIdentifier = "Identifier";
 
